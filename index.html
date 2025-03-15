@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal & Water Schedule</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <h2 class="text-2xl font-bold text-center bg-blue-500 text-white py-3">🍽️ Meal & Water Time Table 🥤</h2>
+        
+        <!-- Tabs for Days -->
+        <div class="flex flex-wrap justify-around bg-gray-200 p-2">
+            <button class="tab-button px-3 py-2 bg-blue-400 text-white rounded m-1" onclick="showDay(0)">Monday</button>
+            <button class="tab-button px-3 py-2 bg-blue-400 text-white rounded m-1" onclick="showDay(1)">Tuesday</button>
+            <button class="tab-button px-3 py-2 bg-blue-400 text-white rounded m-1" onclick="showDay(2)">Wednesday</button>
+            <button class="tab-button px-3 py-2 bg-blue-400 text-white rounded m-1" onclick="showDay(3)">Thursday</button>
+            <button class="tab-button px-3 py-2 bg-blue-400 text-white rounded m-1" onclick="showDay(4)">Friday</button>
+            <button class="tab-button px-3 py-2 bg-blue-400 text-white rounded m-1" onclick="showDay(5)">Saturday</button>
+            <button class="tab-button px-3 py-2 bg-blue-400 text-white rounded m-1" onclick="showDay(6)">Sunday</button>
+        </div>
+
+        <!-- Schedule Content -->
+        <div class="p-4">
+            <!-- Monday -->
+            <div class="day-content border-b pb-4">
+                <h3 class="text-xl font-semibold text-blue-600">📅 Monday</h3>
+                <p class="mt-2 font-semibold">⏰ 6:30 AM - Hydration:</p>
+                <ul class="list-disc pl-5">
+                    <li>🥤 Warm lemon water</li>
+                    <li>🥤 Jeera water</li>
+                    <li>🥤 Fenugreek water</li>
+                    <li>🥤 Amla juice</li>
+                    <li>🥤 Tulsi water</li>
+                </ul>
+                <p class="mt-2 font-semibold">⏰ 8:00 AM - Breakfast:</p>
+                <ul class="list-disc pl-5">
+                    <li>🥞 Ragi dosa & chutney</li>
+                    <li>🍛 Idli with sambar</li>
+                    <li>🍚 Pongal</li>
+                    <li>🥣 Ragi kanji</li>
+                    <li>🍲 Kambu koozh</li>
+                </ul>
+                <p class="mt-2 font-semibold">⏰ 12:30 PM - Lunch:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍚 Sambar rice</li>
+                    <li>🍛 Keerai kootu & rice</li>
+                    <li>🥘 Vegetable kurma & chapati</li>
+                    <li>🍲 Lemon rice & papad</li>
+                    <li>🥗 Curd rice & pickle</li>
+                </ul>
+                <p class="mt-2 font-semibold">⏰ 4:00 PM - Evening Drink:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍵 Sukku coffee</li>
+                    <li>☕ Herbal tea</li>
+                    <li>🥤 Buttermilk</li>
+                    <li>🍹 Fresh lime juice</li>
+                    <li>🥤 Tender coconut water</li>
+                </ul>
+                <p class="mt-2 font-semibold">⏰ 8:00 PM - Dinner:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍚 Ragi kali with keerai masiyal</li>
+                    <li>🍜 Vegetable soup with idiyappam</li>
+                    <li>🍛 Dosa & tomato chutney</li>
+                    <li>🍲 Kichadi & coconut chutney</li>
+                    <li>🍚 Thayir sadam & pickle</li>
+                </ul>
+            </div>
+
+            <div class="day-content hidden">
+                <h3 class="text-xl font-semibold text-blue-600">📅 Tuesday</h3>
+                
+                <p class="mt-2 font-semibold">⏰ 6:30 AM - Hydration:</p>
+                <ul class="list-disc pl-5">
+                    <li>🥤 Jeera water</li>
+                    <li>🥤 Tulsi tea</li>
+                    <li>🥤 Ginger water</li>
+                    <li>🥤 Methi water</li>
+                    <li>🥤 Warm lemon water</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 8:00 AM - Breakfast:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍲 Kambu koozh</li>
+                    <li>🥞 Dosa with chutney</li>
+                    <li>🍛 Upma & coconut chutney</li>
+                    <li>🍚 Rava idli</li>
+                    <li>🥣 Millet porridge</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 12:30 PM - Lunch:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍛 Rasam rice</li>
+                    <li>🍚 Beetroot poriyal & rice</li>
+                    <li>🥘 Soya chunks curry & chapati</li>
+                    <li>🍲 Tamarind rice & chips</li>
+                    <li>🥗 Thayir sadam & mor milagai</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 4:00 PM - Evening Drink:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍵 Ginger tea</li>
+                    <li>☕ Sukku coffee</li>
+                    <li>🥤 Lassi</li>
+                    <li>🍹 Nannari sherbet</li>
+                    <li>🥤 Carrot juice</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 8:00 PM - Dinner:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍚 Wheat dosa & sambar</li>
+                    <li>🍛 Ragi roti & chutney</li>
+                    <li>🍲 Moong dal khichdi</li>
+                    <li>🍜 Vegetable upma</li>
+                    <li>🍚 Curd rice & pickle</li>
+                </ul>
+            </div>            
+
+            <div class="day-content hidden">
+                <h3 class="text-xl font-semibold text-blue-600">📅 Wednesday</h3>
+                
+                <p class="mt-2 font-semibold">⏰ 6:30 AM - Hydration:</p>
+                <ul class="list-disc pl-5">
+                    <li>🥤 Warm lemon water</li>
+                    <li>🥤 Coriander seed water</li>
+                    <li>🥤 Ginger tea</li>
+                    <li>🥤 Tulsi & honey water</li>
+                    <li>🥤 Fenugreek water</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 8:00 AM - Breakfast:</p>
+                <ul class="list-disc pl-5">
+                    <li>🥞 Ragi dosa & coconut chutney</li>
+                    <li>🍛 Poha with peanuts</li>
+                    <li>🍚 Pesarattu (green gram dosa)</li>
+                    <li>🥣 Ragi malt</li>
+                    <li>🍲 Kambu dosa with sambar</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 12:30 PM - Lunch:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍚 Sambar rice & poriyal</li>
+                    <li>🍛 Brinjal curry with rice</li>
+                    <li>🥘 Paruppu sadam (dal rice) with ghee</li>
+                    <li>🍲 Curd rice & pickle</li>
+                    <li>🥗 Lemon rice with papad</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 4:00 PM - Evening Drink:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍵 Green tea</li>
+                    <li>☕ Cardamom milk</li>
+                    <li>🥤 Buttermilk</li>
+                    <li>🍹 Tender coconut water</li>
+                    <li>🥤 Fresh pomegranate juice</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 8:00 PM - Dinner:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍚 Ragi mudde with sambar</li>
+                    <li>🍛 Chapati with vegetable kurma</li>
+                    <li>🍲 Moong dal soup</li>
+                    <li>🍜 Mixed vegetable upma</li>
+                    <li>🍚 Thinai (foxtail millet) pongal</li>
+                </ul>
+            </div>            
+
+            <div class="day-content hidden">
+                <h3 class="text-xl font-semibold text-blue-600">📅 Thursday</h3>
+                
+                <p class="mt-2 font-semibold">⏰ 6:30 AM - Hydration:</p>
+                <ul class="list-disc pl-5">
+                    <li>🥤 Warm lemon honey water</li>
+                    <li>🥤 Cumin water</li>
+                    <li>🥤 Tulsi ginger tea</li>
+                    <li>🥤 Aloe vera juice</li>
+                    <li>🥤 Fenugreek soaked water</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 8:00 AM - Breakfast:</p>
+                <ul class="list-disc pl-5">
+                    <li>🥞 Kambu (pearl millet) dosa with sambar</li>
+                    <li>🍛 Idiyappam with coconut milk</li>
+                    <li>🍚 Rava upma with chutney</li>
+                    <li>🥣 Thinai (foxtail millet) porridge</li>
+                    <li>🍲 Adai dosa with avial</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 12:30 PM - Lunch:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍚 Keerai kootu with rice</li>
+                    <li>🍛 Tomato rasam with rice & appalam</li>
+                    <li>🥘 Chapati with chana masala</li>
+                    <li>🍲 Lemon rice with potato fry</li>
+                    <li>🥗 Curd rice with mango pickle</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 4:00 PM - Evening Drink:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍵 Tulsi green tea</li>
+                    <li>☕ Masala chai</li>
+                    <li>🥤 Buttermilk with curry leaves</li>
+                    <li>🍹 Fresh orange juice</li>
+                    <li>🥤 Amla juice</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 8:00 PM - Dinner:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍚 Ragi kali with mor kuzhambu</li>
+                    <li>🍛 Wheat dosa with tomato chutney</li>
+                    <li>🍲 Moong dal soup with bread</li>
+                    <li>🍜 Vegetable semiya upma</li>
+                    <li>🍚 Samai (little millet) pongal</li>
+                </ul>
+            </div>
+            
+            <div class="day-content hidden">
+                <h3 class="text-xl font-semibold text-blue-600">📅 Friday</h3>
+                
+                <p class="mt-2 font-semibold">⏰ 6:30 AM - Hydration:</p>
+                <ul class="list-disc pl-5">
+                    <li>🥤 Warm lemon honey water</li>
+                    <li>🥤 Jeera water</li>
+                    <li>🥤 Ginger tea</li>
+                    <li>🥤 Methi (fenugreek) water</li>
+                    <li>🥤 Tulsi water</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 8:00 AM - Breakfast:</p>
+                <ul class="list-disc pl-5">
+                    <li>🥞 Ragi dosa with chutney</li>
+                    <li>🍛 Idli with sambar</li>
+                    <li>🍚 Kuthiraivali (barnyard millet) upma</li>
+                    <li>🥣 Ragi porridge</li>
+                    <li>🍲 Poha with peanuts & jaggery</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 12:30 PM - Lunch:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍚 Sambar rice with poriyal</li>
+                    <li>🍛 Tomato rasam with rice</li>
+                    <li>🥘 Chapati with vegetable kurma</li>
+                    <li>🍲 Lemon rice with papad</li>
+                    <li>🥗 Curd rice with mor milagai</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 4:00 PM - Evening Drink:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍵 Cardamom tea</li>
+                    <li>☕ Sukku (dry ginger) coffee</li>
+                    <li>🥤 Buttermilk with ginger</li>
+                    <li>🍹 Fresh watermelon juice</li>
+                    <li>🥤 Tender coconut water</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 8:00 PM - Dinner:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍚 Ragi mudde with sambar</li>
+                    <li>🍛 Wheat dosa with tomato chutney</li>
+                    <li>🍲 Moong dal khichdi</li>
+                    <li>🍜 Vegetable semiya upma</li>
+                    <li>🍚 Thinai (foxtail millet) pongal</li>
+                </ul>
+            </div>
+            
+            <div class="day-content hidden">
+                <h3 class="text-xl font-semibold text-blue-600">📅 Saturday</h3>
+                
+                <p class="mt-2 font-semibold">⏰ 6:30 AM - Hydration:</p>
+                <ul class="list-disc pl-5">
+                    <li>🥤 Warm lemon water</li>
+                    <li>🥤 Tulsi ginger tea</li>
+                    <li>🥤 Coriander seed water</li>
+                    <li>🥤 Amla juice</li>
+                    <li>🥤 Fenugreek soaked water</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 8:00 AM - Breakfast:</p>
+                <ul class="list-disc pl-5">
+                    <li>🥞 Kambu dosa with coconut chutney</li>
+                    <li>🍛 Idiyappam with vegetable stew</li>
+                    <li>🍚 Rava kichadi with sambar</li>
+                    <li>🥣 Samai (little millet) porridge</li>
+                    <li>🍲 Adai dosa with avial</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 12:30 PM - Lunch:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍚 Keerai masiyal with rice</li>
+                    <li>🍛 Pepper rasam with rice & appalam</li>
+                    <li>🥘 Chapati with dal tadka</li>
+                    <li>🍲 Tomato rice with potato fry</li>
+                    <li>🥗 Curd rice with mango pickle</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 4:00 PM - Evening Drink:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍵 Green tea with honey</li>
+                    <li>☕ Cardamom milk</li>
+                    <li>🥤 Buttermilk with mint</li>
+                    <li>🍹 Fresh pineapple juice</li>
+                    <li>🥤 Nannari sherbet</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 8:00 PM - Dinner:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍚 Ragi kali with buttermilk</li>
+                    <li>🍛 Wheat dosa with mint chutney</li>
+                    <li>🍲 Moong dal soup with brown bread</li>
+                    <li>🍜 Broken wheat upma with veggies</li>
+                    <li>🍚 Varagu (kodo millet) pongal</li>
+                </ul>
+            </div>            
+
+            <div class="day-content hidden">
+                <h3 class="text-xl font-semibold text-blue-600">📅 Sunday</h3>
+                
+                <p class="mt-2 font-semibold">⏰ 6:30 AM - Hydration:</p>
+                <ul class="list-disc pl-5">
+                    <li>🥤 Warm lemon water</li>
+                    <li>🥤 Ginger tea</li>
+                    <li>🥤 Jeera water</li>
+                    <li>🥤 Tulsi honey water</li>
+                    <li>🥤 Aloe vera juice</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 8:00 AM - Breakfast:</p>
+                <ul class="list-disc pl-5">
+                    <li>🥞 Ragi dosa with coconut chutney</li>
+                    <li>🍛 Pesarattu (green gram dosa) with ginger chutney</li>
+                    <li>🍚 Ven pongal with sambar</li>
+                    <li>🥣 Ragi malt with jaggery</li>
+                    <li>🍲 Kambu koozh with onion</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 12:30 PM - Lunch:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍚 Sambar rice with vazhakkai (raw banana) fry</li>
+                    <li>🍛 Lemon rasam with rice & appalam</li>
+                    <li>🥘 Chapati with paneer butter masala</li>
+                    <li>🍲 Tomato rice with onion raita</li>
+                    <li>🥗 Curd rice with sundried chillies</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 4:00 PM - Evening Drink:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍵 Green tea with ginger</li>
+                    <li>☕ Masala chai</li>
+                    <li>🥤 Buttermilk with coriander</li>
+                    <li>🍹 Fresh mango juice</li>
+                    <li>🥤 Tender coconut water</li>
+                </ul>
+            
+                <p class="mt-2 font-semibold">⏰ 8:00 PM - Dinner:</p>
+                <ul class="list-disc pl-5">
+                    <li>🍚 Ragi kali with mor kuzhambu</li>
+                    <li>🍛 Wheat dosa with tomato chutney</li>
+                    <li>🍲 Dal soup with whole wheat bread</li>
+                    <li>🍜 Vegetable sevai (rice noodles)</li>
+                    <li>🍚 Little millet upma</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        function showDay(index) {
+            let days = document.querySelectorAll('.day-content');
+            days.forEach((day, i) => {
+                day.classList.toggle('hidden', i !== index);
+            });
+        }
+    </script>
+</body>
+</html>
